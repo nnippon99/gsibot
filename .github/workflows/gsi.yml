@@ -63,7 +63,7 @@ jobs:
              echo "bot-sf-host=frs.sourceforge.net" >> "sf-creds.config"
        - name: Run Bot
          continue-on-error: true
-         timeout-minutes: 350
+         timeout-minutes: 300
          run: |
               sudo chmod -R 0777 *
               sudo java -jar Bobo.jar
