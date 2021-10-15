@@ -49,7 +49,7 @@ jobs:
              cd configs
              touch config.prop
              echo "#Bo³+t config file" >> "config.prop"
-             echo "#Fri Jun 26 06:08:12 UTC 2020" >> "config.prop"
+             echo "#Fri Nov 26 06:08:12 UTC 2021" >> "config.prop"
              echo "bot-username=${{ secrets.BOTUN }}" >> "config.prop"
              echo "bot-token=${{ secrets.BOTKEY }}" >> "config.prop"
              echo "bot-master=${{ secrets.USERKEY }}" >> "config.prop"
@@ -65,7 +65,7 @@ jobs:
              echo "bot-sf-host=frs.sourceforge.net" >> "sf-creds.config"
        - name: Run Bot
          continue-on-error: true
-         timeout-minutes: 350
+         timeout-minutes: 310
          run: |
               sudo chmod -R 0777 *
               sudo java -jar GSIBot.jar
@@ -83,7 +83,7 @@ jobs:
               
        - name: Loop
          continue-on-error: true
-         timeout-minutes: 5
+         timeout-minutes: 3
          run: |
               cd loop/loop
               expect -c "
