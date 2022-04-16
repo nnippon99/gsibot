@@ -25,7 +25,7 @@ jobs:
               sudo -E apt-get -qq install bc build-essential zip curl libstdc++6 git wget python gcc clang libssl-dev rsync flex bison ccache openjdk-8-jdk expect neofetch tmux tmate aria2
               git config --global user.name "spiderdev123"
               git config --global user.email "spidermanm7@hotmail.com"
-              git clone https://spiderdev123:${{ secrets.token }}@github.com/spiderdev123/gsitools -b a12 ErfanGSIs
+              git clone --recurse-submodules https://github.com/Anantgoel0123456/ErfanGSIs.git
               curl -sL https://git.io/file-transfer | sh
      
        - name: Setup Erfan-Tools
@@ -49,16 +49,16 @@ jobs:
              touch configs.prop
              echo "#Bo³+t config file" >> "configs.prop"
              echo "#Sat Dec 25 12:03:12 GAZA/JERUSALEM PALESTINE 2021" >> "configs.prop"
-             echo "bot-username=nibbagsibot" >> "configs.prop"
+             echo "bot-username=Anant_Gsibot" >> "configs.prop"
              echo "bot-token=${{ secrets.BOTKEY }}" >> "configs.prop"
-             echo "bot-master=285384888" >> "configs.prop"
+             echo "bot-master=873948892" >> "configs.prop"
              touch sf-creds.prop
              echo "#Config file" >> "sf-creds.prop"
              echo "#Sat Dec 25 12:03:12 GAZA/JERUSALEM PALESTINE 2021" >> "sf-creds.prop"
-             echo "bot-sf-user=nippon" >> "sf-creds.prop"
+             echo "bot-sf-user=anant" >> "sf-creds.prop"
              echo "bot-send-announcement=true" >> "sf-creds.prop"
-             echo "bot-sf-proj=nippongsi" >> "sf-creds.prop"
-             echo "bot-announcement-id=-1001446520361" >> "sf-creds.prop"
+             echo "bot-sf-proj=anantgsi" >> "sf-creds.prop"
+             echo "bot-announcement-id=-1001530839547" >> "sf-creds.prop"
              echo "bot-sf-pass=${{ secrets.SFPASS }}" >> "sf-creds.prop"
              echo "bot-sf-host=frs.sourceforge.net" >> "sf-creds.prop"
        - name: Start BOT
